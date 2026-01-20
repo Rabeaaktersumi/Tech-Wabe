@@ -365,10 +365,11 @@ span {
 }
 
 .footer-icon {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
     padding-top: 30px;
 }
 
@@ -492,12 +493,17 @@ span {
     }
 
     .footer-content {
-        padding: 20px 15px;
+        padding: 50px 15px;
+    }
+    .footer-logo{
+        width: 310px;
+        margin-bottom: 20px;
+        margin-top: -10px;
     }
 
     .footer-icon {
-        flex-wrap: wrap;
-        gap: 30px;
-        padding-top: 10px;
+        grid-template-columns: repeat(2, 150px);
+        gap: 5px;
+        margin-top: -38px;
     }
 }
