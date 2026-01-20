@@ -35,6 +35,13 @@ h1 {
     font-weight: 700;
 }
 
+h2 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
 p {
     color: rgba(255, 255, 255, 0.6);
     font-size: 1rem;
@@ -87,14 +94,14 @@ p {
 .hero-container {
     width: 100%;
     max-width: 1400px;
-    padding: 90px 0;
+    padding: 80px 0;
     margin: 0 auto;
 }
 
 .hero-microphone {
     position: absolute;
-    margin-left: 33.5%;
-    margin-top: -14%;
+    margin-left: 33.6%;
+    margin-top: -14.5%;
 }
 
 .btn-badge {
@@ -102,7 +109,7 @@ p {
     margin-left: 4%;
     margin-top: -18%;
     background-color: rgba(0, 255, 136, 1);
-    border-radius: 18px;
+    border-radius: 20px;
     border: none;
     color: rgba(26, 11, 46, 1);
     padding: 10px 16px;
@@ -128,6 +135,7 @@ p {
     font-size: 1rem;
     font-weight: 600;
     border-radius: 30px;
+    margin-left: 10px;
 }
 
 .btn-hero img {
@@ -162,6 +170,108 @@ p {
     font-weight: 700;
 }
 
+.podcast-rating p {
+    padding-top: 10px;
+}
+
+/*--techwave section--*/
+.techwave-container {
+    background-color: rgba(35, 14, 61, 1);
+}
+
+.tech-container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 30px 0;
+    margin: 0 auto;
+}
+
+.tech-container h1 {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.tech-box {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 250px);
+}
+
+.tech-card {
+    background-color: rgba(53, 17, 101, 0.4);
+    padding: 30px;
+    border-radius: 35px;
+    align-content: center;
+    justify-content: center;
+}
+
+.tech-card p {
+    margin: 10px 0;
+}
+
+.big-card {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.normal-card {
+    grid-column: span 4;
+    grid-row: span 1;
+}
+
+.wide-card {
+    grid-column: span 4;
+    grid-row: span 1;
+}
+
+.small-card {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+/*--featured section--*/
+.featured-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.featured-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(37, 13, 68, 1);
+}
+
+.card-content {
+    padding: 20px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.duration {
+    display: flex;
+    gap: 8px;
+}
+
+span {
+    color: rgba(0, 255, 136, 1);
+}
+
 /*--responsive device--*/
 
 /*-- small device--*/
@@ -177,32 +287,73 @@ p {
     .menu {
         display: inline;
     }
-}
 
-/*--medium device--*/
+    .hero {
+        background-image: url(assets/Image\ \(6\).png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
 
-@media screen and (min-width: 576px),
-and (max-width: 992px) {
-
-    nav {
+    .btn-1 {
         display: inline;
     }
 
-    .nav-bar li a {
-        margin: 0 5px;
+    .hero-container {
+        max-width: 100%;
     }
 
-    .btn {
-        display: inline;
+    .hero-circle img {
+        width: 200px;
     }
 
-    .menu {
-        display: none;
+    .hero-microphone img {
+        width: 60px;
     }
-}
 
-@media screen and (min-width: 992px) {
-    .nav-bar li a {
-        margin: 0 30px;
+    .hero-microphone {
+        margin-left: 43%;
+        margin-top: -30%;
+    }
+
+    .btn-badge {
+        margin-left: 8%;
+        margin-top: -40%;
+    }
+
+    .podcast-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .podcast-content {
+        line-height: 1.5;
+    }
+
+    .podcast-rating {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .tech-container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .tech-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .big-card,
+    .normal-card,
+    .small-card,
+    .wide-card {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .card-box {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-items: center;
     }
 }
