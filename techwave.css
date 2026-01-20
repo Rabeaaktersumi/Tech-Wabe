@@ -395,17 +395,16 @@ span {
     }
 
     .hero {
-        background-image: url(assets/Image\ \(6\).png);
-        background-size: 100%;
-        background-repeat: no-repeat;
+        background-image: url(./assets/Image\ \(6\).png);
+    }
+    .hero-container {
+    max-width: 100%;
+    padding: 70px 0;
+    margin: 0 auto;
     }
 
     .btn-1 {
         display: inline;
-    }
-
-    .hero-container {
-        max-width: 100%;
     }
 
     .hero-circle img {
@@ -417,13 +416,13 @@ span {
     }
 
     .hero-microphone {
-        margin-left: 43%;
-        margin-top: -30%;
+        margin-left: 45%;
+        margin-top: -25%;
     }
 
     .btn-badge {
-        margin-left: 8%;
-        margin-top: -40%;
+        margin-left: 6%;
+        margin-top: -35%;
     }
 
     .podcast-container {
@@ -442,7 +441,7 @@ span {
 
     .tech-container {
         max-width: 100%;
-        padding: 0 15px;
+        padding: 30px 15px;
     }
 
     .tech-box {
@@ -488,8 +487,6 @@ span {
 
     .footer {
         background-image: url(./assets/Image\ \(8\).png);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .footer-content {
