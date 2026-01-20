@@ -8,6 +8,11 @@ body {
     font-family: "Inter", sans-serif;
     background-color: rgba(26, 11, 46, 1);
 }
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
 .btn {
     border-radius: 30px;
@@ -236,7 +241,7 @@ p {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .featured-container h1 {
@@ -248,7 +253,7 @@ p {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 95px;
     max-width: 400px;
 }
 
@@ -278,6 +283,33 @@ iframe{
 
 span {
     color: rgba(0, 255, 136, 1);
+}
+
+/*--host section--*/
+.host-container{
+    margin: 30px 0;
+}
+.host-container h1{
+    text-align: center;
+}
+
+#host-name{
+    text-align: start;
+}
+.host-info{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    margin: 30px 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 20px;
+}
+.host-social{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 /*--responsive device--*/
@@ -364,5 +396,22 @@ span {
     }
     .featured-container{
         justify-items: center;
+    }
+    .host-container{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 15px;
+    }
+    .host-info{
+        flex-direction: column;
+    }
+    #host-name{
+    text-align: center;
+}
+    .host-social{
+        align-items: center;
+        justify-content: center;
     }
 }
